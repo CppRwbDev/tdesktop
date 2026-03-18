@@ -1,7 +1,7 @@
 name: Can't reproduce.
 
 on:
-  schedule:
+# schedule:
     - cron: '0 3 * * *'
 
 jobs:

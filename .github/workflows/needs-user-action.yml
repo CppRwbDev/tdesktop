@@ -3,7 +3,7 @@ name: Needs user action.
 on:
   issue_comment:
     types: [created]
-  schedule:
+# schedule:
     - cron: '0 2 * * *'
 
 jobs:

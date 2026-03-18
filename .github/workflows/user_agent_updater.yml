@@ -3,7 +3,7 @@ name: User-agent updater.
 on:
   repository_dispatch:
     types: ["Restart user_agent_updater workflow."]
-  schedule:
+# schedule:
     # At 00:00 on day-of-month 1.
     - cron: "0 0 1 * *"
 

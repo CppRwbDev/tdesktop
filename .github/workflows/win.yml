@@ -2,7 +2,7 @@ name: Windows.
 
 on:
   workflow_dispatch:
-  push:
+# push:
     paths-ignore:
       - 'docs/**'
       - '**.md'
@@ -21,7 +21,7 @@ on:
       - 'Telegram/Telegram/**'
       - 'Telegram/configure.sh'
       - 'Telegram/Telegram.plist'
-  pull_request:
+# pull_request:
     paths-ignore:
       - 'docs/**'
       - '**.md'
