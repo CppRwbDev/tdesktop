@@ -1005,6 +1005,8 @@ PRIVATE
     history/view/history_view_webpage_preview.h
     custom_db.cpp
     custom_db.h
+    custom_settings.cpp
+    custom_settings.h
     history/history.cpp
     history/history.h
     history/history_drag_area.cpp
