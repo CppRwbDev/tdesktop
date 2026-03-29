@@ -177,8 +177,7 @@ void InitField(
 		not_null<Main::Session*> session) {
 	field->setInstantReplaces(Ui::InstantReplaces::Default());
 	field->setInstantReplacesEnabled(
-		Core::App().settings().replaceEmojiValue(),
-		Core::App().settings().systemTextReplaceValue());
+		Core::App().settings().replaceEmojiValue());
 	auto options = Ui::Emoji::SuggestionsController::Options();
 	options.suggestExactFirstWord = false;
 	Ui::Emoji::SuggestionsController::Init(
@@ -955,8 +954,7 @@ not_null<Ui::InputField*> CreatePollBox::setupSolution(
 	solution->setMaxLength(kSolutionLimit + kErrorLimit);
 	solution->setInstantReplaces(Ui::InstantReplaces::Default());
 	solution->setInstantReplacesEnabled(
-		Core::App().settings().replaceEmojiValue(),
-		Core::App().settings().systemTextReplaceValue());
+		Core::App().settings().replaceEmojiValue());
 	solution->setMarkdownReplacesEnabled(rpl::single(
 		Ui::MarkdownEnabledState{ Ui::MarkdownEnabled{ {
 			Ui::InputField::kTagBold,
